@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: lightgray;
+        }
+        .container{
+            background-color: lightpink;
+            border: 3px solid rgb(0, 190,46);
+            /* we can set margin/padding for left,right,bottom ,top  */
+            padding-top: 50px;
+            padding-left: 67px;
+            padding-right: 90px;
+            padding-bottom: 40px;
+            /* we can write similarly for margin */
+            margin: 30px;
+           padding: 25px 30px 6px 7px; /* padding: top right bottom left; */
+            /* padding:39px 30px; padding:y(top/bottom) x(left/right); */
+            border-radius: 30px;
+            width: 235px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>this is my heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic tempora non quisquam tenetur sit voluptatibus numquam consectetur! Eos nam in, culpa error nisi quo vel officiis eum fuga veniam voluptates adipisci repellat obcaecati suscipit deleniti quae corrupti consequuntur est!</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic tempora non quisquam tenetur sit voluptatibus numquam consectetur! Eos nam in, culpa error nisi quo vel officiis eum fuga veniam voluptates adipisci repellat obcaecati suscipit deleniti quae corrupti consequuntur est!</p>
+        </div>
+
+        <div class="container">
+            <h3>this is my heading</h3>
+            <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic tempora non quisquam tenetur sit voluptatibus numquam consectetur! Eos nam in, culpa error nisi quo vel officiis eum fuga veniam voluptates adipisci repellat obcaecati suscipit deleniti quae corrupti consequuntur est!</p>
+            </div>
+</body>
+</html>

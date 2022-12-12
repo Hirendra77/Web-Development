@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        /* display inline block used to palce all box in one line */
+        /* position: static(default),absolute,relative,fixed,sticky */
+        .container{
+            border:  3px solid rgb(18, 17, 17);
+            background-color: rgb(197, 221, 87);
+            height: 3444px;
+        }
+      .box{
+        display: inline-block;
+        border: 2px solid black;
+        margin: 3px;
+        width: 150px;
+        height: 150px;
+
+      }
+      #box3{
+        /* relative:position  the element relative to its normal position and will a gap to its normal position */
+        /* position: relative; */
+
+        /* absolute:position the element relative to the position of its first parent of container */
+        /* position: absolute; */
+        /* top: 34px;
+        left: 134px; */
+        
+        /* fixed:position the element relative to its browser window */
+        /* position: fixed
+        right 5px; */
+       
+        /* sticky:position the element stick to the window fixed while other element moves up and down */
+      position: sticky;
+      top: 4px;
+      }
+    </style>
+</head>
+<body>
+    <!-- id should be diff foe each box -->
+    <h3>Positioning property</h3>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

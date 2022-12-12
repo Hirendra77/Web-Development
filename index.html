@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/yoga-3338691__340.jpg');
+            background-repeat: no-repeat;
+            /*repeat-x and y will make it repeat on x and y axis */
+            background-size: 100% 150%;
+            color: white;
+        }
+
+        .left {
+            display: inline block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 90px;
+            height: 80px;
+
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid black; */
+            padding: 0px;
+            margin: 29px auto;
+            width: 40%;
+        }
+
+        .right {
+            display: inline block;
+            /* border: 2px solid rgb(135, 20, 229); */
+            position: absolute;
+            right: 34px;
+            top: 25px;
+        }
+
+        .navbar {
+            display: inline block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .navbar li a {
+            color: white;
+            padding: 24px 10px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(228, 20, 20);
+
+        }
+
+        .btn {
+            margin: auto;
+            font-size: 15px;
+            font-family: 'Barlow', sans-serif;
+            padding: 4px 14px;
+            background-color: #e789082e;
+            color: white;
+            border: 2px ssolid rgb(46, 43, 43);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(84, 81, 81);
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin: 60px 45px;
+            padding: 22px 38px;
+            width: 33%;
+            border-radius: 20px
+        }
+
+        .form-group input {
+            text-align: center;
+            margin: 2px;
+            width: 300px;
+            display: block;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .container h1 {
+            font-size: 25px;
+        }
+
+        .container button {
+            background-color: black;
+            border-color: black;
+            display: block;
+            margin: 4px;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+
+            <img src="img/yogalogo.png" alt="YOG">
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Programs</a></li>
+                <li> <a href="#">Mental Health</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Holistic Yoga Classes</h1>
+        <form action="noaction.nodejs">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="address" number="text" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <input type="number" number="number" placeholder="Enter your mobile number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
